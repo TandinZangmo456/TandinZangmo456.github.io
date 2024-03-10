@@ -1,4 +1,3 @@
-
 ---
 Title : SWS101 Flipped class 1 
 categories : [SWS101, Flipped_Class1]
