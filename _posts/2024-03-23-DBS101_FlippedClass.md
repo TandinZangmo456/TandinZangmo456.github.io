@@ -1,10 +1,10 @@
 ---
-Title : DBS101 Flipped class 4 
-categories : [DBS101, Flipped_Class4]
+Title : DBS101 Flipped class 5 
+categories : [DBS101, Flipped_Class5]
 tags : [DBS101]
 ---
 
-### Topic : Ranking, Windowing, Pivoting, Rollup and Cube.
+### Topic : Normalization in DBMS.
 ----
 
 Normalization in DBMS
