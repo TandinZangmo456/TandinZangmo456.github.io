@@ -27,4 +27,4 @@ Time Series Database
 It is a database system designed to store and retrieve such data for each point in time. It is used in Financial trading systems,Recording stock prices over time and Asset-tracking applications.
 
 Column oriented Databases
-A columnar database is a database management system (DBMS)  which helps store the data in columns rather than rows. It is also responsible for speeding up the time required to return a particular query. When we run analytics on a small number of columns in the network, we can read those columns directly without consuming memory with unwanted data.
+A columnar database is a database management system (DBMS)  which helps store the data in columns rather than rows. It is also responsible for speeding up the time required to return a particular query. When we run analytics on a small number of columns in the network, we can read those columns directly without consuming memory with unwanted datas.
