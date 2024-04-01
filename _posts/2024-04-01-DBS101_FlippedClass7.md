@@ -55,4 +55,4 @@ According to the relevant materials given, it introduces chidb, a quarter-long C
 - **SQL Compiler Development:** Makes the system user-friendly by allowing interaction through SQL queries.
 - **API Design:** Provides a layer of abstraction for external programs to interact with the database system.
 
-By following these procedures and using appropriate data structures, you can build a functional relational database system from scratch. This approach offers a comprehensive understanding of how database systems work internally.
+By following these procedures and using appropriate data structures, we can build a functional relational database system from scratch. This approach offers a comprehensive understanding of how database systems work internally.
