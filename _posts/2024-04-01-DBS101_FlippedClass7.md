@@ -9,7 +9,7 @@ tags : [DBS101]
 
 In today's class, i learned about the storage and buffer management which are diviided in to three parts that is simulate disk blocks, RAID configurations, and buffer pools.
 
-Disk Block Management is considered really important because it manages the space on a disk efficiently to store and get back data as fast as possible. Which clearly includes putting data in order, getting rid of blocks we don't need anymore and tidying up the disk to keep things neat and tidy.
+Disk Block Management is really important because it manages the space on a disk efficiently to store and get back data as fast as possible. It clearly includes putting data in order, getting rid of blocks we don't need anymore and tidying up the disk to keep things neat and tidy.
 
 1. We create a DiskBlock instance with 10 blocks of size 512 bytes.
 2. We allocate contiguous blocks for data1 and read/write data to those blocks.
@@ -30,7 +30,7 @@ Buffer Pool Management: Managing a buffer pool efficiently is important for impr
 3. fetch_page method is responsible for fetching a page from the buffer pool. If the page is already in the buffer, it updates its usage count.
 4. If not, it fetches the page from disk (not implemented in this example) and adds it to the buffer pool. If the buffer is full, it evicts the least recently used page.
 
-According to the relevant materials given, it introduces chidb, a quarter-long C programming project in which the students implement a basic relational database management system from scratch. Here's an outline of the important procedures to be followed when building a relational database system from scratch, along with the data structures used and their importance:
+According to the relevant materials given, it introduces chidb, a quarter-long C programming project in which the students implement a basic relational database management system from scratch. 
 
 1. **File Format Definition:**
    -It efficiently store tables, indexes, and schema information. It also establishes a structured way to store data on disk and enabling retrieval using specific layouts.
