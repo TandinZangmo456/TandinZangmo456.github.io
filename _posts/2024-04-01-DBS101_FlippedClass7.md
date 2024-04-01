@@ -4,5 +4,5 @@ categories : [DBS101, Flipped_Class7]
 tags : [DBS101]
 ---
 
-### Topic : 
+### Topic : Building a relational database system from scratch
 ----
