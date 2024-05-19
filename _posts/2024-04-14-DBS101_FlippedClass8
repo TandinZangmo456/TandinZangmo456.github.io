@@ -8,7 +8,7 @@ tags : [DBS101]
 ----
 1. Buffer Trees:
 
-Buffer trees serve as an intermediary between main memory and disk storage, enabling fast retrieval of commonly used data blocks. Buffer trees reduce the delay of disk reads and writes by organizing disk pages in memory hierarchically. Furthermore, they have a key function in efficiently controlling buffer pool resources, guaranteeing that the most important data is kept in memory for quick access.
+Buffer trees serve as an intermediary between main memory and disk storage which enables fast retrieval of commonly used data blocks. Buffer trees reduce the delay of disk reads and writes by organizing disk pages in memory hierarchically. Furthermore, they have a key function in efficiently controlling buffer pool resources, guaranteeing that the most important data is kept in memory for quick access.
 
 Key Takeaway:
 
@@ -65,7 +65,6 @@ Pros:
 2. Fast Boolean Operations: Bitmap indices allow for quick boolean operations (AND, OR, NOT) on numerous attributes, improving query processing for analytical tasks and decision support systems.
 3. Query Performance: Bitmap indices are great for situations with intricate query conditions or multi-dimensional data examination, allowing for quick query responses and facilitating interactive data exploration.
 
-
 Cons:
 
 1. High Overhead for Low-Cardinality Attributes: Bitmap indices can have high costs for attributes with few distinct values, as they need multiple bitmaps to cover all potential attribute values, resulting in higher storage needs and maintenance efforts.
@@ -116,5 +115,5 @@ Bitmap Indices:
 
 Bitmap Representation: 
 Every unique attribute value is represented by a bitmap, with each bit linked to a database record to show if the record includes the attribute value.
-Creating algorithms for indexing tasks, such as creating bitmaps and managing insertions, deletions, and queries (e.g., boolean operations like AND, OR, NOT).
+Creating algorithms for indexing tasks, such as creating bitmaps and managing insertions, deletions, and queries (e.g, boolean operations like AND, OR, NOT).
 Utilize methods to optimize storage and memory usage by compressing bitmaps or utilizing sparse bitmap representations to decrease storage overhead for attributes with low cardinality.
