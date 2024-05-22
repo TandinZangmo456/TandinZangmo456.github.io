@@ -55,8 +55,6 @@ Now we can get better answer with better performance
 4. Indexing: Just like regular tables, you can add indexes to materialized views to make your queries even faster.
 
 **Advanced Query Optimization in DBMS**
-<img src="/assets/lib/introduction-to-query-optimization-in-dbms.jpg" alt="Screenshot of my Journal" width="50%">
-
 Optimizing queries is essential in managing databases, especially when dealing with large amounts of data. Advanced techniques in query optimization focus on improving query performance by reducing the time and resources needed to execute them efficiently. Here are some advanced topics you might encounter:
 
 1. **Cost-Based Optimization**: This method determines the costs of different query execution plans and selects the one with the lowest cost, considering disk usage, CPU usage, and memory consumption.
