@@ -39,7 +39,7 @@ Materialized views are like saved snapshots of answers to questions in a databas
 
 **Example**
 Without materialized views, the query might look something like this:
-<img src="/assets/lib/Screenshot from 2024-05-23 00-11-21.png" alt="Screenshot of my Journal" width="50%">
+<img src="assets/lib/Screenshot from 2024-05-23 00-11-21.png" alt="Screenshot of my Journal" width="50%">
 Running this query on a large dataset could be very slow. so, by creating a materialized view, we precalculate these results:
 <img src="/assets/lib/Screenshot from 2024-05-23 00-13-42.png" alt="Screenshot of my Journal" width="50%">
 Now we can get better answer with better performance
