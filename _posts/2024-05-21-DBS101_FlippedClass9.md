@@ -37,13 +37,7 @@ Materialized views are like saved snapshots of answers to questions in a databas
    - **Scheduled**: Views get updated regularly, like every day or every hour.
    - **Instantly**: Views get updated automatically whenever the main data changes.
 
-**Example**
-Without materialized views, the query might look something like this:
-<img src="assets/lib/Screenshot from 2024-05-23 00-11-21.png" alt="Screenshot of my Journal" width="50%">
-Running this query on a large dataset could be very slow. so, by creating a materialized view, we precalculate these results:
-<img src="assets/lib/Screenshot from 2024-05-23 00-13-42.png" alt="Screenshot of my Journal" width="50%">
-Now we can get better answer with better performance
-<img src="assets/lib/Screenshot from 2024-05-23 00-14-26.png" alt="Screenshot of my Journal" width="50%">
+
 
 **Considerations and Best Practices**
 1. Storage Costs: Materialized views take up extra space in your database so therefore it is important to balance the speed benefits they bring with the space they use up.
