@@ -21,7 +21,6 @@ The integrity and reliability of transactions are ensured by adhering to the ACI
 4. Durability: Worried after this they have committed a transaction it cannot be rolled back for instance in a system failure.  It also means that the outcome of a particular transaction is safely stored within the great database treasure chest. 
 
 **Simple Transaction Model**
-![stm](/assets/lib/sml1.png)
 
 Consider a transaction that transfers $50 from account A to account B. The operations involved would be:
 
@@ -39,12 +38,12 @@ Committing provides durability since updates are written out to the nonvolatile 
 
 Concurrency control is sustained by making use of techniques such as locking or by numbering transactions for instance by granting timestamps. 
 
-This is done at the end of the transaction to in order to ensure that the database constraints have not been broken.
+This is done at the end of the transaction in order to ensure that the database constraints have not been broken.
 
 **Isolation Levels**
 The different levels offer diverse degrees of isolation:
 
-Serializable: Provides full isolation socveillance
+Serializable: Provides full isolation surveillance
 Consistent read: falls short of being fully serializable, but prevents reading dirty data.
 Non-repeatable reads are allowed but only committed data can be read => Read Committed
 read uncommitted : This gives you a chance to read inconsistent data.
@@ -56,31 +55,12 @@ Use concurrency control or execute transactions in a serial fashion as a solutio
 
 Next we did this transaction in PostgreSQL.
 
-![create](/assets/lib/create.png)
 
 **Transaction Atomicity and Durability**
 1. Although transactions can fail, atomicity makes sure that their consequences are totally reversed in the event that they are unsuccessful.
 2. These errors are handled by recovery plans with the help of transaction logs.
 3. Every database update is tracked in this log, along with the transaction, the data that was changed, and the old and new values.
 4. The system ensures atomicity and makes sure committed changes are permanent by examining the log and doing redos or undos as necessary.
-
-![tad](/assets/lib/ato&du.png)
-
-1. Active:
-![a](/assets/lib/active.png)
-
-2. Partially Committed:
-![pc](/assets/lib/par_committed.png)
-
-3. Failed
-![f](/assets/lib/failed.png)
-
-4. Aborted
-![ab](/assets/lib/aborted.png)
-
-5. Committed
-![c](/assets/lib/committed.png)
-
 
 # Serializability
 Serializability is a key concept in databases that ensures the results of multiple transactions happening at the same time are the same as if they happened one after the other.
