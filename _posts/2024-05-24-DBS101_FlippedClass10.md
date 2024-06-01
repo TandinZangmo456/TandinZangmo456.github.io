@@ -1,6 +1,6 @@
 ---
-Title : DBS101 Flipped class 9 
-categories : [DBS101, Flipped_Class9]
+Title : DBS101 Flipped class 10 
+categories : [DBS101, Flipped_Class10]
 tags : [DBS101]
 ---
 
@@ -21,6 +21,7 @@ The integrity and reliability of transactions are ensured by adhering to the ACI
 4. Durability: Worried after this they have committed a transaction it cannot be rolled back for instance in a system failure.  It also means that the outcome of a particular transaction is safely stored within the great database treasure chest. 
 
 **Simple Transaction Model**
+![Alt text](../assets/sml1.png)
 
 Consider a transaction that transfers $50 from account A to account B. The operations involved would be:
 
@@ -38,12 +39,12 @@ Committing provides durability since updates are written out to the nonvolatile 
 
 Concurrency control is sustained by making use of techniques such as locking or by numbering transactions for instance by granting timestamps. 
 
-This is done at the end of the transaction in order to ensure that the database constraints have not been broken.
+This is done at the end of the transaction to in order to ensure that the database constraints have not been broken.
 
 **Isolation Levels**
 The different levels offer diverse degrees of isolation:
 
-Serializable: Provides full isolation surveillance
+Serializable: Provides full isolation socveillance
 Consistent read: falls short of being fully serializable, but prevents reading dirty data.
 Non-repeatable reads are allowed but only committed data can be read => Read Committed
 read uncommitted : This gives you a chance to read inconsistent data.
@@ -55,12 +56,31 @@ Use concurrency control or execute transactions in a serial fashion as a solutio
 
 Next we did this transaction in PostgreSQL.
 
+![Alt text](../assets/create.png)
 
 **Transaction Atomicity and Durability**
 1. Although transactions can fail, atomicity makes sure that their consequences are totally reversed in the event that they are unsuccessful.
 2. These errors are handled by recovery plans with the help of transaction logs.
 3. Every database update is tracked in this log, along with the transaction, the data that was changed, and the old and new values.
 4. The system ensures atomicity and makes sure committed changes are permanent by examining the log and doing redos or undos as necessary.
+
+![Alt text](../assets/ato&du.png)
+
+1. Active:
+![a](/assets/lib/active.png)
+
+2. Partially Committed:
+![Alt text](../assets/par_committed.png)
+
+3. Failed
+![Alt text](../assets/failed.png)
+
+4. Aborted
+![Alt text](../assets/aborted.png)
+
+5. Committed
+![Alt text](../assets/committed.png)
+
 
 # Serializability
 Serializability is a key concept in databases that ensures the results of multiple transactions happening at the same time are the same as if they happened one after the other.
@@ -101,3 +121,4 @@ In this non-serial schedule, the operations of T1 and T2 are performed in an ove
 
 **Conclusion**
 Understanding transactions in databases involves ensuring they adhere to the ACID properties: Atomicity means all the operations in the transaction will be completed successfully or none at all; Consistency means that a transaction will bring the database from one consistent state to another; Isolation means that the transaction cannot affect other transactions occurring simultaneously; Durability means that once a transaction has been committed, it’s effects cannot be reversed or rolled back. The enforcement of serializability, different levels of isolation concerning transaction processing is important when handling transactions concurrently. Whether the schedule is serial or non serial, conflict scheduling reduces on the number of conflicts on the outcome and always produces the same outcome every time the database is under concurrent access.
+
