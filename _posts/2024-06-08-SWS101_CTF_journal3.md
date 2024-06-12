@@ -107,7 +107,7 @@ Conclusion
 
 The today’s task was a thrilling adventure to the world of Pickle Rick, at least this is how it felt to me. Enumerating all the users details next, exploiting into admin account, and finally ‘becoming root,’ I was able to obtain all three flags. I really enjoyed this exercise because it helped me to practice the web exploitation techniques and gather the information about privilege escalation.
 
-Key Learnings:
+Key concepts:
 Significance of proper enumeration in infirmity of likely exploits.
 
 Thus, applying the discovered credentials to successfully deceive security mechanisms or systems.
